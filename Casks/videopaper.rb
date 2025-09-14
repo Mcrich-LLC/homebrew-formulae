@@ -9,6 +9,8 @@ cask "videopaper" do
 
   app "VideoPaper.app"
 
+  depends_on macos: ">= :tahoe"
+
   zap trash: [
     "~/Library/Preferences/com.mcrich.VideoPaper.plist",
     "~/Library/Saved Application State/com.mcrich.VideoPaper.savedState",
